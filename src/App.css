@@ -1,0 +1,90 @@
+@keyframes rainbow {
+    0% {
+        background: blue;
+        color: white;
+    }
+    10% {
+        background: darkblue;
+        color: white;
+    }
+    20% {
+        background: green;
+        color: black;
+    }
+    30% {
+        background: skyblue;
+        color: black;
+    }
+    40% {
+        background: magenta;
+        color: white;
+    }
+    50% {
+        background: purple;
+        color: white;
+    }
+    60% {
+        background: orange;
+        color: black;
+    }
+    70% {
+        background: red;
+        color: white;
+    }
+    80% {
+        background: yellow;
+        color: black;
+    }
+    90% {
+        background: pink;
+        color: black;
+    }
+    100% {
+        background: blue;
+        color: white;
+    }
+}
+@keyframes text {
+    0% {
+        content: "Hi";
+    }
+    10% {
+        content: "We're getting things ready for you";
+    }
+    30% {
+        content: "Setting up your account";
+    }
+    50% {
+        content: "Setting up firmware";
+    }
+    70% {
+        content: "Double checking everything";
+    }
+    90% {
+        content: "Almost done";
+    }
+    100% {
+        content: "Kaboom!";
+    }
+}
+
+.hello {
+    font-size: 5rem;
+    text-align: center;
+    animation-name: rainbow;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background: blue;
+    height: 100vh;
+}
+
+.hello:after {
+    position: relative;
+    top: 40vh;
+    animation-name: text;
+    animation-duration: 60s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: unset;
+    content: "Hi";
+}
