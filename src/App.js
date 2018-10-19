@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
+import Main from './Main';
 import Footer from './components/Footer';
 import ScrollButton from './components/ScrollButton';
 
@@ -25,10 +22,7 @@ class App extends Component {
       return (
         <div>
           <ScrollButton />
-          <Header />
-          <About />
-          <Portfolio />
-          <Contact />
+          <Main />
           <Footer />
         </div>
       );
